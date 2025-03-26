@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BIM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+375af8e894f988f835bc44ccb4da9fafbb2132bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74706ee8328b6e074334bc5f29c93a7c66fdf77c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BIM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BIM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
