@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Tính điểm môn học";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" action="/DiemMonHoc/TinhDiem">
+    <label>Điểm A:</label>
+    <input type="number" name="diemA" step="0.01" required />
+    <br />
+
+    <label>Điểm B:</label>
+    <input type="number" name="diemB" step="0.01" required />
+    <br />
+
+    <label>Điểm C:</label>
+    <input type="number" name="diemC" step="0.01" required />
+    <br />
+
+    <button type="submit">Tính Điểm</button>
+</form>

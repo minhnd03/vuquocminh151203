@@ -1,0 +1,31 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+@model BIM.Models.BMI
+
+@{
+    ViewBag.Title = "Tính Chỉ Số BMI";
+}
+
+<h2>Tính Chỉ Số BMI</h2>
+
+@using (Html.BeginForm("Index", "BMI", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.ChieuCao, "Chiều cao (m):")
+        @Html.TextBoxFor(m => m.ChieuCao, new { @class = "form-control", type = "number", step = "0.01" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.CanNang, "Cân nặng (kg):")
+        @Html.TextBoxFor(m => m.CanNang, new { @class = "form-control", type = "number", step = "0.1" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Tính BMI</button>
+}
+
+@if (ViewBag.KetQua != null)
+{
+    <div class="alert alert-info mt-3">
+        @ViewBag.KetQua
+    </div>
+}

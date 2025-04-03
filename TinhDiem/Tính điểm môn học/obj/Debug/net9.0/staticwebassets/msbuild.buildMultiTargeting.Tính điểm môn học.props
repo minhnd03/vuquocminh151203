@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Tính điểm môn học.props" />
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Tính điểm môn học/1.0.0": {
+        "runtime": {
+          "Tính điểm môn học.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tính điểm môn học/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
