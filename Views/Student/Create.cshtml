@@ -1,0 +1,16 @@
+@model CRUD.Models.Student
+
+<h2>Thêm sinh viên mới</h2>
+
+<form asp-action="Create" method="post">
+    <label>ID:</label><br />
+    <input asp-for="Id" /><br /><br />
+
+    <label>Họ tên:</label><br />
+    <input asp-for="Name" /><br /><br />
+
+    <label>GPA:</label><br />
+    <input asp-for="GPA" /><br /><br />
+
+    <button type="submit">Thêm</button>
+</form>
