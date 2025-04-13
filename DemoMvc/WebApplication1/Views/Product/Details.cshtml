@@ -1,0 +1,10 @@
+@model MvcDemoApp.Models.Product
+
+<h2>Product Details</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <p>Price: @Model.Price</p>
+</div>
+
+<a href="@Url.Action("Index", "Product")">Back to List</a>
