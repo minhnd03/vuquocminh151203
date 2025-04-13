@@ -1,0 +1,39 @@
+@model IEnumerable<MvcMovie.Models.Movie>
+
+@{
+    ViewData["Title"] = "Movie List";
+}
+
+<h1>Movie List</h1>
+
+<p>
+    <a href="@Url.Action("Create")">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Title)</th>
+            <th>@Html.DisplayNameFor(model => model.Genre)</th>
+            <th>@Html.DisplayNameFor(model => model.ReleaseDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Genre</td>
+            <td>@item.ReleaseDate</td>
+            <td>@item.Price</td>
+            <td>
+                <a href="@Url.Action("Edit", new { id = item.ID })">Edit</a> |
+                <a href="@Url.Action("Details", new { id = item.ID })">Details</a> |
+                <a href="@Url.Action("Delete", new { id = item.ID })">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
